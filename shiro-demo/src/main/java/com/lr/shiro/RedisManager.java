@@ -5,7 +5,6 @@ package com.lr.shiro;
  * @version V1.0
  */
 
-import org.springframework.beans.factory.annotation.Value;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
@@ -30,7 +29,6 @@ public class RedisManager {
 
 	private int timeout = 5000;
 
-	@Value("${spring.redis.password}")
 	private String password = "";
 
 	private static JedisPool jedisPool = null;
